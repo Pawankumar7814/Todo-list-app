@@ -1,0 +1,35 @@
+body {
+    margin: 0px;
+    font-size: 16px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: red;
+}
+
+.horizontal-list {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.horizontal-list li {
+    list-style-type: none;
+    margin: 0.5rem;
+}
+
+.horizontal-list li a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.4rem;
+}
+
+
+/* Flex Class */
+
+.flex {
+    display: flex;
+}
