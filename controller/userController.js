@@ -9,14 +9,12 @@ module.exports.signin = function(req, res) {
 }
 
 module.exports.addUser = async function(req, res) {
-
     var userData = {
         name: req.body.uname,
         email: req.body.uemail,
         password: req.body.upass
     };
     console.log(userData);
-
     try {
         if (userData.upass == userData.c_upass) {
             var user = User.create({
@@ -24,7 +22,6 @@ module.exports.addUser = async function(req, res) {
                 email: userData.email,
                 password: userData.password
             });
-
             console.log(`User Created Successfully`);
             return res.redirect('/users/signin');
         }
